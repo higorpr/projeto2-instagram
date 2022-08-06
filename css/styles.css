@@ -128,6 +128,7 @@ ion-icon {
     border-radius: 3px;
     width: 614px;
     position: relative;
+    overflow: hidden;
 }
 
 .stories_menu-story_box {
@@ -230,6 +231,11 @@ ion-icon {
 .header-right-icon {
     margin: 0 17px;
 
+}
+
+.post-pic {
+    display:flex;
+    justify-content: center;
 }
 
 .post-bottom {
@@ -376,5 +382,24 @@ ion-icon {
     font-size: 14px;
 }
 
-
 /* #endregion */
+
+@media(max-width:935px) {
+    .content-recommend {
+        display: none;
+    }
+
+    .top-menu_box {
+        width: 100%;
+    }
+}
+
+@media(max-width:614px) {
+    .stories_chevron {
+        display: none;
+    }
+
+    .content-left {
+        width: 100%;
+    }
+}
