@@ -5,6 +5,10 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+body p {
+    color: #262626
+}
+
 ion-icon {
     font-size: 22px;
     margin: 0 10px;
@@ -115,12 +119,59 @@ ion-icon {
 }
 
 .left-stories_menu {
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
     /* background-color: yellow; */
-    height: 100px;
+    display: flex;
+    height: 118px;
     box-sizing: border-box;
     border: 1px solid #dbdbdb;
-    width: 700px;
+    border-radius: 3px;
+    width: 614px;
+    position: relative;
+}
+
+.stories_menu-story_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 14px;
+    width: 66px;
+    /* background-color: orange; */
+}
+
+.initial_story {
+    margin-left: 17px;
+}
+
+
+.story_border {
+    height: 66px;
+    width: 66px;
+    /* background-color: blue;     */
+}
+
+.story_icon {
+    height: 56px;
+    width: 56px;
+    position: absolute;
+    bottom: 37px;
+    left: 5.5px;
+}
+
+.stories_menu-story_box p {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+.stories_chevron {
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    right: 5px;
+    top: 45px;
 }
 
 .left-main_menu {
@@ -133,13 +184,15 @@ ion-icon {
     flex-direction: column;
     box-sizing: border-box;
     border: 1px solid #dbdbdb;
-    margin-bottom:60px;
+    margin-bottom: 60px;
+    border-radius: 3px;
     /* background-color: gold; */
 }
 
 .post-header {
     display: flex;
     justify-content: space-between;
+    background-color: rgb(255, 255, 255);
     /* background-color: pink; */
 }
 
@@ -182,6 +235,7 @@ ion-icon {
 .post-bottom {
     display: flex;
     flex-direction: column;
+    background-color: rgb(255, 255, 255);
 }
 
 .bottom-icon_menu {
@@ -224,11 +278,102 @@ ion-icon {
 
 .content-recommend {
     width: 293px;
-    height: 200px;
-    background-color: red;
-    opacity: 0.3;
+    background-color: #fafafa;
+    /* background-color: red; */
+    /* opacity: 0.5; */
     margin-top: 34px;
     z-index: 1;
+}
+
+.recommend-main {
+    display: flex;
+    /* background-color: navy; */
+    margin-top: 23px;
+    margin-left: 29px;
+    align-items: center;
+}
+
+.recommend-main img {
+    width: 56px;
+    height: 56px;
+}
+
+.main-name {
+    margin-left: 17px;
+}
+
+.light_text {
+    font-weight: 300;
+    color: #8e8e8e
+}
+
+.recommend-main p {
+    font-size: 14px;
+}
+
+.recommend-sugg_title {
+    display:flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 17px;
+    margin-left: 29px;
+}
+
+.grey_text {
+    color: #8e8e8e
+}
+
+.recommend-suggestions {
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    margin-left: 29px;
+}
+
+.suggestions-sugg_box {
+    display:flex;
+    justify-content: space-between;
+    /* background-color: blue; */
+    margin-bottom:16px;
+
+}
+
+.sugg {
+    display: flex;
+    /* background-color: yellow; */
+    align-items: center;
+}
+
+.sugg-pic img {
+    height: 32px;
+    width: 32px;
+}
+
+.sugg-name {
+    margin-left: 11px;
+}
+
+.sugg_title {
+    margin-bottom:6px;
+}
+
+
+.text_sugg_box {
+    color:#139EF2;
+    font-size:12px;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+}
+
+.small_text {
+    font-size: 12px;
+}
+
+.big_text {
+    font-size: 14px;
 }
 
 
