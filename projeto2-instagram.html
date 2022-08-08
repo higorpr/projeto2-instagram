@@ -20,19 +20,22 @@
     <div class="top">
         <div class="top-menu_box">
             <div class="top-instagram">
-                <ion-icon class="initial_icon" name='logo-instagram'></ion-icon>
+                <ion-icon class="initial_icon initial_icon_mobile" name='logo-instagram'></ion-icon>
                 <div class="vl"></div>
-                <img src="images/used/logo.png" alt="logo_instagram">
+                <img class='hide_mobile' src="images/used/logo.png" alt="logo_instagram">
             </div>
             <div class="top-search">
                 <img src="images/used/Rectangle 5.png" alt="search_bar">
                 <div class="search_text">Pesquisar</div>
             </div>
+            <div class="show_mobile">
+                <img src="images/used/logo.png" alt="logo_instagram">
+            </div>
             <div class="top-social_icons">
-                <ion-icon class='initial_icon' name="paper-plane-outline"></ion-icon>
-                <ion-icon name="compass-outline"></ion-icon>
-                <ion-icon name="heart-outline"></ion-icon>
-                <ion-icon class="last_icon" name="person-outline"></ion-icon>
+                <ion-icon class='initial_icon social_icon_mobile' name="paper-plane-outline"></ion-icon>
+                <ion-icon class="hide_mobile" name="compass-outline"></ion-icon>
+                <ion-icon class='hide_mobile' name="heart-outline"></ion-icon>
+                <ion-icon class="last_icon hide_mobile" name="person-outline"></ion-icon>
             </div>
         </div>
 
@@ -176,7 +179,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="main_menu-post">
+                <div class="main_menu-post last_post">
                     <div class="post-header">
                         <div class="header-left">
                             <img src="images/used/adorableanimals 1.png" alt="">
@@ -211,7 +214,7 @@
                                 <span class='normal_text'>Curtido por</span>
                                 <span class='bold_text'>respondeai</span>
                                 <span class='normal_text'>e</span>
-                                <span class='bold_text'>200.834 pessoas</span>
+                                <span class='bold_text'>outras 200.834 pessoas</span>
                             </p>
                         </div>
                     </div>
@@ -329,6 +332,16 @@
         </div>
     </div>
     <!-- Final content -->
+
+    <!-- Início menu mobile -->
+    <div class="content-menu_mobile show_mobile">
+        <ion-icon name="home"></ion-icon>
+        <ion-icon name="search-outline"></ion-icon>
+        <ion-icon name="add-circle-outline"></ion-icon>
+        <ion-icon name="heart-outline"></ion-icon>
+        <ion-icon name="person-outline"></ion-icon>
+    </div>
+    <!-- Final menu mobile -->
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 
